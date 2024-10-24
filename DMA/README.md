@@ -9,3 +9,4 @@ How it helps?
 - In standard flow, peripheral, e.g. uarat, interrupt controller on data reception. MCU stops execution and server interrupt, then it has to initiate load transaction on bus so that data gets copied to regiseter,
 - then this data will get copied to memory from register, with store instruction.
 - with DMA we get rid of such overhead, and uart can directly create interrupt to dma controller and it can initiate transaction data movement operation.
+- in this case, power consumption is reduced, and hence low power application make use of DMA controller. (ARM block will be completely turned off.) 
